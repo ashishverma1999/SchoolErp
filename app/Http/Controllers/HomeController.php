@@ -36,7 +36,9 @@ class HomeController extends Controller
                 if ($dbSettings->has('alternate_phone')) $school['alternate_phone'] = $dbSettings->get('alternate_phone');
                 if ($dbSettings->has('whatsapp')) $school['whatsapp'] = $dbSettings->get('whatsapp');
                 if ($dbSettings->has('address')) $school['address'] = $dbSettings->get('address');
+                if ($dbSettings->has('location')) $school['location'] = $dbSettings->get('location');
                 if ($dbSettings->has('timing')) $school['timing'] = $dbSettings->get('timing');
+                if ($dbSettings->has('whatsapp_display')) $school['whatsapp_display'] = $dbSettings->get('whatsapp_display');
             }
         } catch (Throwable) {
             // fallback to config
@@ -74,24 +76,22 @@ class HomeController extends Controller
                 if ($dbSettings->has('stat_teachers')) $stats[2]['value'] = $dbSettings->get('stat_teachers');
                 if ($dbSettings->has('stat_results')) $stats[3]['value'] = $dbSettings->get('stat_results');
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         $heroPreferred = [
-            'school_building.jpeg',
-            'school_gallery.jpeg',
-            'WhatsApp Image 2026-08-24 at 1.39.04 PM (1).jpeg',
-            'WhatsApp Image 2026-08-24 at 1.39.09 PM (1).jpeg',
-            'WhatsApp Image 2026-08-24 at 1.39.07 PM (2).jpeg',
+            'hero_bg.jpg',
             'classroom1.jpeg',
             'classroom2.jpeg',
-            'school_van.jpeg',
+            'classroom3.jpeg',
+            'sports.jpg',
         ];
 
         $aboutPreferred = [
-            'school_building.jpeg',
             'classroom1.jpeg',
-            'WhatsApp Image 2026-08-24 at 1.39.04 PM (1).jpeg',
-            'WhatsApp Image 2026-08-24 at 1.39.08 PM.jpeg',
+            'classroom2.jpeg',
+            'classroom3.jpeg',
+            'sports.jpg',
         ];
 
         return view('pages.home', [
@@ -113,10 +113,10 @@ class HomeController extends Controller
             'aboutImages' => $this->preferredImages($localImages, $aboutPreferred),
             'galleryItems' => $galleryItems,
             'galleryCategories' => $this->extractCategories($galleryItems),
-            'brochureImage' => $this->findImage($localImages, 'brochure.jpeg') ?? '/images/brochure.jpeg',
+            'brochureImage' => $this->findImage($localImages, 'brochure.png') ?? '/images/brochure.png',
             'transportImage' => $this->findImage($localImages, 'school_van.jpeg') ?? '/images/school_van.jpeg',
-            'pageTitle' => "{$school['name']} | Best English Medium School (Pre to 12th) in Mungra Badshahpur, Jaunpur",
-            'pageDescription' => "{$school['name']} is a premier English medium K-12 school in Mungra Badshahpur, Jaunpur offering Pre-Nursery to Class 12th education (Science, Commerce & Arts) with smart classrooms, advanced science labs, sports, caring faculty and safe transport.",
+            'pageTitle' => "{$school['name']} | Premier School ERP — Excellence in Education",
+            'pageDescription' => "{$school['name']} is a premier English-medium K-12 institution offering Pre-Nursery to Class XII education with smart classrooms, advanced science labs, sports facilities, expert faculty, and safe transport.",
         ]);
     }
 
@@ -126,7 +126,7 @@ class HomeController extends Controller
             if (Schema::hasTable('birthdays')) {
                 $items = Birthday::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (Birthday $b) => [
+                    return $items->map(fn(Birthday $b) => [
                         'id' => $b->id,
                         'name' => $b->name,
                         'type' => $b->type,
@@ -138,7 +138,8 @@ class HomeController extends Controller
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect([
             [
@@ -180,7 +181,7 @@ class HomeController extends Controller
             if (Schema::hasTable('testimonials')) {
                 $items = Testimonial::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (Testimonial $t) => [
+                    return $items->map(fn(Testimonial $t) => [
                         'id' => $t->id,
                         'name' => $t->name,
                         'role' => $t->role,
@@ -191,7 +192,8 @@ class HomeController extends Controller
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect(config('school.reviews'));
     }
@@ -202,7 +204,7 @@ class HomeController extends Controller
             if (Schema::hasTable('notices')) {
                 $items = Notice::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (Notice $n) => [
+                    return $items->map(fn(Notice $n) => [
                         'title' => $n->title,
                         'badge' => $n->badge,
                         'date' => $n->notice_date ? $n->notice_date->format('Y-m-d') : now()->format('Y-m-d'),
@@ -210,7 +212,8 @@ class HomeController extends Controller
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect(config('school.notices'));
     }
@@ -221,7 +224,7 @@ class HomeController extends Controller
             if (Schema::hasTable('facilities')) {
                 $items = Facility::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (Facility $f) => [
+                    return $items->map(fn(Facility $f) => [
                         'title' => $f->title,
                         'text' => $f->description,
                         'icon' => $f->icon,
@@ -229,7 +232,8 @@ class HomeController extends Controller
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect(config('school.facilities'));
     }
@@ -240,7 +244,7 @@ class HomeController extends Controller
             if (Schema::hasTable('academic_wings')) {
                 $items = AcademicWing::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (AcademicWing $a) => [
+                    return $items->map(fn(AcademicWing $a) => [
                         'title' => $a->title,
                         'classes' => $a->classes,
                         'tag' => $a->tag,
@@ -250,7 +254,8 @@ class HomeController extends Controller
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect(config('school.academics'));
     }
@@ -261,7 +266,7 @@ class HomeController extends Controller
             if (Schema::hasTable('leadership_messages')) {
                 $items = LeadershipMessage::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (LeadershipMessage $m) => [
+                    return $items->map(fn(LeadershipMessage $m) => [
                         'title' => $m->title,
                         'name' => $m->name,
                         'role' => $m->role,
@@ -271,7 +276,8 @@ class HomeController extends Controller
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect(config('school.messages'));
     }
@@ -282,14 +288,15 @@ class HomeController extends Controller
             if (Schema::hasTable('faqs')) {
                 $items = Faq::active()->get();
                 if ($items->isNotEmpty()) {
-                    return $items->map(fn (Faq $f) => [
+                    return $items->map(fn(Faq $f) => [
                         'q' => $f->question,
                         'a' => $f->answer,
                         'category' => $f->category,
                     ]);
                 }
             }
-        } catch (Throwable) {}
+        } catch (Throwable) {
+        }
 
         return collect(config('school.faqs'));
     }
@@ -310,11 +317,11 @@ class HomeController extends Controller
                         $ext = strtolower($file->getExtension());
                         return in_array($ext, ['jpg', 'jpeg', 'png', 'webp'], true) && $filename !== 'logo.png';
                     })
-                    ->map(fn ($file): string => '/' . $directory . '/' . $file->getFilename())
+                    ->map(fn($file): string => '/' . $directory . '/' . $file->getFilename())
                     ->all();
             })
-            ->unique(fn (string $path) => basename($path))
-            ->sortBy(fn (string $path): string => basename($path))
+            ->unique(fn(string $path) => basename($path))
+            ->sortBy(fn(string $path): string => basename($path))
             ->values();
     }
 
@@ -329,12 +336,12 @@ class HomeController extends Controller
                     ->get();
 
                 if ($dbItems->isNotEmpty()) {
-                    return $dbItems->map(fn (Gallery $g) => [
+                    return $dbItems->map(fn(Gallery $g) => [
                         'id' => $g->id,
                         'title' => $g->title,
                         'category' => $g->category ?: 'Activities',
                         'image' => $g->image_url,
-                        'description' => $g->description ?: 'Campus life at KSN Public School.',
+                        'description' => $g->description ?: 'Campus life at Excel Public School.',
                         'is_featured' => (bool) $g->is_featured,
                     ]);
                 }
@@ -343,12 +350,12 @@ class HomeController extends Controller
             // fallback
         }
 
-        return $localImages->map(fn (string $path, int $index) => [
+        return $localImages->map(fn(string $path, int $index) => [
             'id' => $index + 1,
             'title' => $this->imageTitle($path),
             'category' => $this->imageCategory($path),
             'image' => $path,
-            'description' => 'A glimpse of students and campus life at KSN Public School.',
+            'description' => 'A glimpse of students and campus life at Excel Public School.',
             'is_featured' => $index < 8,
         ]);
     }
@@ -375,7 +382,7 @@ class HomeController extends Controller
     private function preferredImages(Collection $images, array $filenames): Collection
     {
         $matched = collect($filenames)
-            ->map(fn (string $filename): ?string => $this->findImage($images, $filename))
+            ->map(fn(string $filename): ?string => $this->findImage($images, $filename))
             ->filter();
 
         return $matched->merge($images)->unique()->values();
@@ -383,7 +390,7 @@ class HomeController extends Controller
 
     private function findImage(Collection $images, string $filename): ?string
     {
-        return $images->first(fn (string $path): bool => basename($path) === $filename);
+        return $images->first(fn(string $path): bool => basename($path) === $filename);
     }
 
     private function imageTitle(string $path): string

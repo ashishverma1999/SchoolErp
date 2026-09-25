@@ -2,29 +2,28 @@
 
 return [
     'profile' => [
-        'name' => 'KSN Public School',
-        'short' => 'KSNPS',
+        'name' => 'Excel Public School',
+        'short' => 'EPS',
         'logo' => '/images/logo.png',
         'tagline' => 'Nurturing confident, creative, and ethical learners from Pre-Nursery to Class XII with modern education, discipline, and core values.',
-        'subheading' => 'Premier English Medium Co-Educational K-12 Institution (Pre to 12th) | Mungra Badshahpur, Jaunpur',
+        'subheading' => 'Premier English Medium Co-Educational K-12 Institution (Pre to 12th)',
         'affiliation' => 'Recognized & Following Modern Progressive Curriculum (Pre-Nursery to Class XII)',
-        'email' => 'info@ksnpublicschool.edu.in',
-        'phone' => '+91 93692 47677',
-        'alternate_phone' => '+91 76076 03165',
-        'whatsapp' => '919793856502',
-        'whatsapp_display' => '+91 97938 56502',
-        'location' => 'Mungra Badshahpur, Jaunpur, Uttar Pradesh',
-        'address' => 'KSN Public School, Mungra Badshahpur, Jaunpur, Uttar Pradesh 222202',
+        'email' => 'admissions@excelpublicschool.edu.in',
+        'phone' => '+91 98765 43210',
+        'whatsapp' => '919876543210',
+        'whatsapp_display' => '+91 98765 43210',
+        'location' => 'Knowledge City Campus',
+        'address' => 'Excel Public School Campus, Knowledge Park, Sector 12',
         'timing' => 'Monday to Saturday: 8:00 AM – 2:00 PM',
         'office_timing' => 'Monday to Saturday: 8:00 AM – 3:30 PM',
         'facebook' => 'https://facebook.com',
         'instagram' => 'https://instagram.com',
         'youtube' => 'https://youtube.com',
-        'map_embed' => 'https://maps.google.com/maps?q=Mungra+Badshahpur,+Jaunpur,+Uttar+Pradesh+222202&t=&z=14&ie=UTF8&iwloc=&output=embed',
+        'map_embed' => 'https://maps.google.com/maps?q=School+Location&t=&z=14&ie=UTF8&iwloc=&output=embed',
     ],
 
     'navigation' => [
-        'About KSNPS' => [
+        'About EPS' => [
             ['label' => 'About Overview', 'href' => '#about'],
             ['label' => 'Vision & Mission', 'href' => '#vision-mission'],
             ['label' => 'Leadership Desk', 'href' => '#leadership'],
@@ -39,12 +38,10 @@ return [
         'Campus Life' => [
             ['label' => 'Facilities & Labs', 'href' => '#facilities'],
             ['label' => 'Transport Facility', 'href' => '#transport'],
-            ['label' => 'Birthday Stars & Celebrations', 'href' => '#birthdays'],
             ['label' => 'Photo & Event Gallery', 'href' => '#gallery'],
         ],
         'Admissions' => [
             ['label' => 'Admission Process', 'href' => '#admission-process'],
-            ['label' => 'Download Prospectus', 'href' => '#downloads'],
             ['label' => 'Online Enquiry Form', 'href' => '#admissions'],
             ['label' => 'FAQs', 'href' => '#faqs'],
         ],
@@ -64,15 +61,15 @@ return [
     'notices' => [
         ['date' => '2026-08-25', 'title' => 'Admissions Open for Academic Session 2026–27 (Pre-Nursery to Class XII — Science, Commerce & Arts streams). Limited seats available.', 'badge' => 'Admissions'],
         ['date' => '2026-08-22', 'title' => 'Senior Secondary Science Laboratories (Physics, Chemistry, Biology) & AI Computer Lab upgraded with modern equipment.', 'badge' => 'Facilities'],
-        ['date' => '2026-08-18', 'title' => 'School Van route expansion: Daily pickup & drop operational across Mungra Badshahpur and adjoining localities.', 'badge' => 'Transport'],
+        ['date' => '2026-08-18', 'title' => 'School Van route expansion: Daily pickup & drop operational across all major residential routes.', 'badge' => 'Transport'],
         ['date' => '2026-08-10', 'title' => 'Career Guidance & Board Examination Counseling Seminar scheduled for Classes IX to XII students and parents.', 'badge' => 'Academic'],
     ],
 
     'stats' => [
-        ['value' => '25+', 'label' => 'Years of Excellence', 'detail' => 'Serving families with trusted education'],
-        ['value' => '2000+', 'label' => 'Happy Students', 'detail' => 'Pre-Nursery to Class XII learners'],
-        ['value' => '65+', 'label' => 'Dedicated Teachers', 'detail' => 'PGT, TGT & PRT specialist faculty'],
-        ['value' => '100%', 'label' => 'Holistic Care & Results', 'detail' => 'Safety, sports, board prep & values'],
+        ['value' => '15+', 'label' => 'Years of Excellence', 'detail' => 'Serving families with trusted education'],
+        ['value' => '2500+', 'label' => 'Happy Students', 'detail' => 'Pre-Nursery to Class XII learners'],
+        ['value' => '120+', 'label' => 'Dedicated Teachers', 'detail' => 'PGT, TGT & PRT specialist faculty'],
+        ['value' => '98%', 'label' => 'Board Pass Rate', 'detail' => 'Consistent board exam excellence'],
     ],
 
     'vision_mission' => [
@@ -138,7 +135,7 @@ return [
         [
             'step' => '02',
             'title' => 'Campus Visit & Counseling',
-            'desc' => 'Visit our campus in Mungra Badshahpur for an interactive session, lab tour, and academic stream guidance with our counselor.',
+            'desc' => 'Visit our main campus for an interactive session, lab tour, and academic stream guidance with our counselor.',
         ],
         [
             'step' => '03',
@@ -181,7 +178,7 @@ return [
         [
             'title' => 'Safe Transport Fleet (Vans)',
             'icon' => 'bus',
-            'text' => 'Dedicated school van fleet covering Mungra Badshahpur and adjoining localities with trained drivers and caring attendants.',
+            'text' => 'Dedicated school transport fleet covering all designated city routes with trained drivers and caring attendants.',
         ],
         [
             'title' => 'CCTV Surveillance & Safety',
@@ -198,35 +195,35 @@ return [
     'messages' => [
         [
             'title' => "Chairman's Message",
-            'name' => 'Prof. Rajendra Prasad Singh',
-            'role' => 'Chairman, KSNPS',
-            'designation' => 'Ex. Dean - Social Science | Ex. HOD Psychology Department, MGKVP Varanasi',
-            'image' => '/images/chairman.jpeg',
-            'text' => 'Education is not merely about accumulating facts; it is the ignition of character, psychological strength, discipline, and noble aspirations. At KSN Public School, we strive to build a strong foundation of values, modern scientific knowledge, and self-confidence in every student from early childhood to Class XII.',
+            'name' => 'Mr. [Chairman Name]',
+            'role' => 'Chairman, EPS',
+            'designation' => 'Founder & Educational Visionary',
+            'image' => '/images/classroom1.jpeg',
+            'text' => 'Education is not merely about accumulating facts; it is the ignition of character, psychological strength, discipline, and noble aspirations. At Excel Public School, we strive to build a strong foundation of values, modern scientific knowledge, and self-confidence in every student.',
         ],
         [
             'title' => "Director's Message",
-            'name' => 'Dr. Anshuman Singh',
-            'role' => 'Director, KSNPS',
-            'designation' => 'Assistant Professor & HOD Hindi Department, BPGC | D.Phil from Allahabad University',
-            'image' => '/images/director.jpeg',
-            'text' => 'Our vision is to provide an inclusive and intellectually stimulating academic environment where every student discovers their unique strengths. From foundational play-way learning to senior secondary stream mastery, we combine rich linguistic proficiency and cultural values with progressive teaching methodologies.',
+            'name' => 'Dr. [Director Name]',
+            'role' => 'Director, EPS',
+            'designation' => 'Academic Director & Education Specialist',
+            'image' => '/images/classroom2.jpeg',
+            'text' => 'Our vision is to provide an inclusive and intellectually stimulating academic environment where every student discovers their unique strengths. We combine rich linguistic proficiency and cultural values with progressive teaching methodologies.',
         ],
         [
             'title' => "Principal's Message",
-            'name' => 'Smt. Rajbala Singh',
-            'role' => 'Principal, KSNPS',
+            'name' => 'Mrs. [Principal Name]',
+            'role' => 'Principal, EPS',
             'designation' => 'M.A., B.Ed. | Experienced Educator & Instructional Leader',
-            'image' => '/images/principal.jpeg',
-            'text' => 'Every child possesses immense potential waiting to be nurtured with care and discipline. Our dedicated team of educators is committed to providing personalized attention, encouraging active inquiry, hands-on lab experiments, and building strong study habits for lifelong success.',
+            'image' => '/images/classroom3.jpeg',
+            'text' => 'Every child possesses immense potential waiting to be nurtured with care and discipline. Our dedicated team of educators is committed to providing personalized attention, encouraging active inquiry, hands-on lab experiments, and building strong study habits.',
         ],
         [
             'title' => "Vice Principal's Message",
-            'name' => 'Dr. Abhilaksha Singh',
-            'role' => 'Vice Principal, KSNPS',
-            'designation' => 'M.Sc Gold Medalist | D.Phil Botany | B.Ed | Academic Coordinator & Student Activities Head',
-            'image' => '/images/vice_principal.jpeg',
-            'text' => 'We believe in a harmonious blend of scholastic rigor and co-curricular vibrancy. By cultivating disciplined routines, creative expression, competitive exam foundation, and good habits, we prepare our learners to face future challenges with optimism.',
+            'name' => 'Dr. [Vice Principal Name]',
+            'role' => 'Vice Principal, EPS',
+            'designation' => 'Academic Coordinator & Student Activities Head',
+            'image' => '/images/sports.jpg',
+            'text' => 'We believe in a harmonious blend of scholastic rigor and co-curricular vibrancy. By cultivating disciplined routines, creative expression, and competitive exam foundation, we prepare our learners to face future challenges with optimism.',
         ],
     ],
 
@@ -234,37 +231,37 @@ return [
         [
             'name' => 'Rajesh Sharma',
             'role' => 'Parent of Class XII Student (Science)',
-            'image' => '/images/school_building.jpeg',
+            'image' => '/images/classroom1.jpeg',
             'rating' => 5,
-            'text' => 'The senior secondary faculty for 11th and 12th science is outstanding at KSN Public School. The practical laboratories, regular test series, and board guidance helped my daughter gain immense clarity and confidence for her upcoming exams.',
+            'text' => 'The senior secondary faculty for 11th and 12th science is outstanding at Excel Public School. The practical laboratories, regular test series, and board guidance helped my daughter gain immense clarity and confidence for her upcoming exams.',
         ],
         [
             'name' => 'Sunita Srivastava',
             'role' => 'Parent of Pre-Nursery Student',
-            'image' => '/images/classroom1.jpeg',
+            'image' => '/images/classroom2.jpeg',
             'rating' => 5,
-            'text' => 'The kindergarten teachers are very caring and patient. My daughter loves going to KSN Public School every morning. The environment is safe, clean, and filled with creative fun activities.',
+            'text' => 'The kindergarten teachers are very caring and patient. My daughter loves going to Excel Public School every morning. The environment is safe, clean, and filled with creative fun activities.',
         ],
         [
             'name' => 'Manoj Gupta',
             'role' => 'Parent of Class X Student',
-            'image' => '/images/classroom2.jpeg',
+            'image' => '/images/classroom3.jpeg',
             'rating' => 5,
-            'text' => 'The focus on science, mathematics, and English communication is commendable. The preparation for board exams in 10th standard is thorough with personalized doubt sessions and punctual van transport.',
+            'text' => 'The focus on science, mathematics, and English communication is commendable. The preparation for board exams in 10th standard is thorough with personalized doubt sessions and excellent transport service.',
         ],
         [
             'name' => 'Pooja Tiwari',
             'role' => 'Parent of Class IV Student',
-            'image' => '/images/classroom3.jpeg',
+            'image' => '/images/sports.jpg',
             'rating' => 5,
-            'text' => 'Extracurricular events like Independence Day celebrations, science exhibitions and sports day are organized with great enthusiasm. KSN Public School provides complete holistic learning from nursery to 12th.',
+            'text' => 'Extracurricular events like Independence Day celebrations, science exhibitions and sports day are organized with great enthusiasm. Excel Public School provides complete holistic learning from nursery to 12th.',
         ],
     ],
 
     'faqs' => [
         [
-            'q' => 'What classes and academic streams are offered at KSN Public School?',
-            'a' => 'KSN Public School provides comprehensive K-12 education from Pre-Nursery to Class XII. For Senior Secondary (Classes XI & XII), we offer Science (PCM & PCB), Commerce, and Humanities/Arts streams with specialized laboratory and faculty support.',
+            'q' => 'What classes and academic streams are offered at Excel Public School?',
+            'a' => 'Excel Public School provides comprehensive K-12 education from Pre-Nursery to Class XII. For Senior Secondary (Classes XI & XII), we offer Science (PCM & PCB), Commerce, and Humanities/Arts streams with specialized laboratory and faculty support.',
         ],
         [
             'q' => 'What is the admission procedure for the new session?',
@@ -272,7 +269,7 @@ return [
         ],
         [
             'q' => 'What laboratory facilities are available for Secondary & Senior Secondary students?',
-            'a' => 'KSNPS features fully equipped modern Physics, Chemistry, Biology, and Computer Science laboratories with all required apparatus, specimens, and digital equipment for board curriculum experiments and practical assessments.',
+            'a' => 'Excel Public School features fully equipped modern Physics, Chemistry, Biology, and Computer Science laboratories with all required apparatus, specimens, and digital equipment for board curriculum experiments and practical assessments.',
         ],
         [
             'q' => 'What are the school operating hours?',
@@ -280,15 +277,15 @@ return [
         ],
         [
             'q' => 'Is transport (school van) available for all classes?',
-            'a' => 'Yes, KSN Public School provides supervised school van services covering multiple designated routes in Mungra Badshahpur and neighboring areas. Please consult the school office for specific route stops.',
+            'a' => 'Yes, Excel Public School provides supervised school van services covering multiple designated routes. Please consult the school office for specific route stops and transport details.',
         ],
         [
             'q' => 'What documents are required during admission?',
             'a' => 'Documents required include: Child\'s Birth Certificate, 4 Passport-size photographs of the student, 2 passport photos of parents/guardians, Aadhaar card copy, and previous school Transfer Certificate (TC) / Report card / Marksheet for Class I and above.',
         ],
         [
-            'q' => 'What is the medium of instruction at KSN Public School?',
-            'a' => 'The medium of instruction is English, with equal emphasis on strong proficiency in Hindi, Sanskrit, and foundational communication skills.',
+            'q' => 'What is the medium of instruction at Excel Public School?',
+            'a' => 'The medium of instruction is English, with equal emphasis on strong proficiency in Hindi and foundational communication skills across all levels.',
         ],
     ],
 ];

@@ -18,13 +18,13 @@ class GallerySeeder extends Seeder
         }
 
         $files = collect(File::files($directory))
-            ->filter(fn ($f) => in_array(strtolower($f->getExtension()), ['jpg', 'jpeg', 'png', 'webp'], true));
+            ->filter(fn($f) => in_array(strtolower($f->getExtension()), ['jpg', 'jpeg', 'png', 'webp'], true));
 
         $specialMeta = [
             'school_building.jpeg' => [
                 'title' => 'Main Academic Campus & Building',
                 'category' => 'Campus',
-                'description' => 'Exterior view of the Happy Model Public School campus located at Mungra Badshahpur, Jaunpur.',
+                'description' => 'Exterior view of the KSN Public School campus located at Khalilabad, Sant Kabir Nagar.',
                 'is_featured' => true,
             ],
             'school_gallery.jpeg' => [
@@ -36,7 +36,7 @@ class GallerySeeder extends Seeder
             'school_van.jpeg' => [
                 'title' => 'Dedicated School Transport Fleet',
                 'category' => 'Transport',
-                'description' => 'Safe, reliable and supervised school van service connecting nearby localities in Jaunpur.',
+                'description' => 'Safe, reliable and supervised school van service connecting nearby localities in Khalilabad.',
                 'is_featured' => true,
             ],
             'classroom1.jpeg' => [
@@ -60,28 +60,28 @@ class GallerySeeder extends Seeder
             'chairman.jpeg' => [
                 'title' => 'Prof. Rajendra Prasad Singh (Chairman)',
                 'category' => 'Leadership',
-                'description' => 'Ex. Dean - Social Science & Ex. HOD Psychology Department, MGKVP Varanasi. Chairman, HMPS.',
+                'description' => 'Ex. Dean - Social Science & Ex. HOD Psychology Department, MGKVP Varanasi. Chairman, KSNPS.',
                 'is_featured' => true,
             ],
             'director.jpeg' => [
                 'title' => 'Dr. Anshuman Singh (Director)',
                 'category' => 'Leadership',
-                'description' => 'Assistant Professor & HOD Hindi Department, BPGC. D.Phil from Allahabad University. Director, HMPS.',
+                'description' => 'Assistant Professor & HOD Hindi Department, BPGC. D.Phil from Allahabad University. Director, KSNPS.',
                 'is_featured' => true,
             ],
             'principal.jpeg' => [
                 'title' => 'Smt. Rajbala Singh (Principal)',
                 'category' => 'Leadership',
-                'description' => 'M.A., B.Ed. Experienced Educator & Instructional Leader. Principal, HMPS.',
+                'description' => 'M.A., B.Ed. Experienced Educator & Instructional Leader. Principal, KSNPS.',
                 'is_featured' => true,
             ],
             'vice_principal.jpeg' => [
                 'title' => 'Vice Principal (Academic Coordinator)',
                 'category' => 'Leadership',
-                'description' => 'Academic coordination, discipline, and student activities management. Vice Principal, HMPS.',
+                'description' => 'Academic coordination, discipline, and student activities management. Vice Principal, KSNPS.',
                 'is_featured' => true,
             ],
-            'brochure.jpeg' => [
+            'brochure.png' => [
                 'title' => 'Official School Prospectus & Admission Guidelines',
                 'category' => 'Admissions',
                 'description' => 'Complete guide to admissions, curriculum highlights, rules and fee structure.',
@@ -135,7 +135,7 @@ class GallerySeeder extends Seeder
             } else {
                 $title = Str::headline(pathinfo($filename, PATHINFO_FILENAME));
                 $category = 'Activities';
-                $desc = 'Glimpse of vibrant student life and campus activities at Happy Model Public School.';
+                $desc = 'Glimpse of vibrant student life and campus activities at KSN Public School.';
                 $featured = false;
             }
 

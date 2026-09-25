@@ -6,7 +6,7 @@
             </div>
             <div>
                 <span class="block font-serif text-3xl font-black leading-tight text-white sm:text-5xl">{{ $school['name'] }}</span>
-                <span class="block text-sm font-bold uppercase tracking-[0.22em] text-[#ffd200] mt-1">Mungra Badshahpur, Jaunpur</span>
+                <span class="block text-sm font-bold uppercase tracking-[0.22em] text-[#ffd200] mt-1">{{ $school['location'] ?? 'Knowledge City Campus' }}</span>
             </div>
         </a>
     </div>

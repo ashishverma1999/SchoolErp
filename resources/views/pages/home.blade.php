@@ -10,10 +10,8 @@
         @include('public.partials.about')
         @include('public.partials.director-message')
         @include('public.partials.facilities')
-        @include('public.partials.birthdays')
         @include('public.partials.gallery')
         @include('public.partials.reviews')
-        @include('public.partials.achievements-birthdays')
         @include('public.partials.admissions')
         @include('public.partials.faq')
     </main>
