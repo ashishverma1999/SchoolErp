@@ -31,13 +31,22 @@
                 </div>
             @endforeach
 
+            <a href="#erp-modules" class="nav-item inline-flex items-center gap-1.5 font-bold text-purple-700">
+                <span class="inline-block w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                <span>ERP Suite</span>
+            </a>
             <a href="#gallery" class="nav-item">Gallery</a>
             <a href="#reviews" class="nav-item">Reviews</a>
             <a href="#contact" class="nav-item">Contact</a>
 
-            <a href="#admissions" class="ml-3 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-purple-600 to-violet-600 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-purple-300/40 hover:from-purple-700 hover:to-violet-700 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            <button type="button" onclick="openErpDemoModal('admin')" class="ml-2 inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-orange-500 px-3.5 py-2 text-xs font-black uppercase tracking-wider text-slate-950 shadow-md shadow-amber-500/25 hover:from-amber-400 hover:to-orange-400 hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer border border-amber-300">
+                <svg class="w-3.5 h-3.5 text-slate-950 flex-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <span>Live ERP Demo</span>
+            </button>
+
+            <a href="#admissions" class="ml-1.5 inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-purple-600 to-violet-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-purple-300/40 hover:from-purple-700 hover:to-violet-700 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
                 <span>Admissions 2026</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
             </a>
         </nav>
 
@@ -86,7 +95,25 @@
                 </div>
             @endforeach
 
+            <a href="#erp-modules" class="block rounded-xl px-3 py-2 text-sm font-bold text-purple-700 bg-purple-50/70 border border-purple-100 flex items-center justify-between">
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    <span>Integrated ERP Suite</span>
+                </span>
+                <span class="text-[10px] font-black uppercase tracking-wider bg-purple-200/70 text-purple-800 px-2 py-0.5 rounded">Modules</span>
+            </a>
+
             <div class="pt-4 border-t border-purple-100 space-y-2">
+                <!-- Mobile ERP Live Demo Launch Button -->
+                <button 
+                    type="button" 
+                    onclick="openErpDemoModal('admin'); document.getElementById('mobile-nav-menu').classList.add('hidden');" 
+                    class="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-orange-500 py-3 text-sm font-black text-slate-950 shadow-md shadow-amber-500/20 active:scale-98 transition-all"
+                >
+                    <svg class="w-4 h-4 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <span>Launch Live ERP Demo</span>
+                </button>
+
                 <!-- Mobile Language Selector -->
                 <div class="flex items-center justify-between px-3 py-2 rounded-xl bg-purple-50 border border-purple-100">
                     <span class="text-xs font-bold text-purple-700">Language / भाषा</span>

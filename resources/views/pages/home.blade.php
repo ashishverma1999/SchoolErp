@@ -7,6 +7,7 @@
 
     <main id="home">
         @include('public.partials.hero')
+        @include('public.partials.erp-modules')
         @include('public.partials.about')
         @include('public.partials.director-message')
         @include('public.partials.facilities')
@@ -16,6 +17,7 @@
         @include('public.partials.faq')
     </main>
 
+    @include('public.partials.erp-demo-modal')
     @include('public.partials.footer')
     @include('public.partials.back-to-top')
 @endsection

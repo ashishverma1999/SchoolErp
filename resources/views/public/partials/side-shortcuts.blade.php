@@ -1,7 +1,17 @@
 <!-- Persistent Floating WhatsApp & Contact Shortcuts -->
 <div class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3" aria-label="Floating Action Shortcuts">
-    <!-- Desktop quick pills (Call & Apply) -->
+    <!-- Desktop quick pills (Call & Apply & Live ERP Demo) -->
     <div class="hidden sm:flex flex-col gap-2.5 items-end">
+        <button 
+            type="button"
+            onclick="openErpDemoModal('admin')"
+            class="floating-action-pill bg-gradient-to-r from-amber-500 via-amber-400 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black shadow-lg shadow-amber-500/30 border border-amber-300/60 ring-2 ring-amber-400/20 cursor-pointer transition-all transform hover:scale-105 active:scale-95"
+            title="Open Interactive School ERP Demo"
+        >
+            <svg class="w-4 h-4 text-slate-950 flex-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span class="font-black text-xs tracking-wide">Live ERP Demo</span>
+            <span class="inline-block w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+        </button>
         <a 
             href="tel:{{ $school['phone'] }}" 
             class="floating-action-pill bg-gradient-to-r from-purple-700 to-violet-700 hover:from-purple-600 hover:to-violet-600 text-white shadow-lg shadow-purple-900/40 border border-purple-500/20"

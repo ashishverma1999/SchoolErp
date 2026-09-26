@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
             AdminUserSeeder::class,
             KsnSchoolDataSeeder::class,
             GallerySeeder::class,
+            SchoolErpSeeder::class,
         ]);
     }
 }

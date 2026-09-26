@@ -49,20 +49,20 @@
                 </div>
             </div>
 
-            <!-- Column 2: Quick Links Navigation -->
+            <!-- Column 2: Quick Links & ERP Portals -->
             <div>
-                <h3 class="text-sm font-black uppercase tracking-widest text-purple-400">Quick Navigation</h3>
+                <h3 class="text-sm font-black uppercase tracking-widest text-purple-400">Navigation &amp; ERP Portals</h3>
                 <div class="mt-5 grid grid-cols-2 gap-2 text-xs sm:text-sm text-purple-200">
                     <a href="#about" class="hover:text-purple-300 transition-colors py-1">About {{ $school['short'] ?? 'EPS' }}</a>
-                    <a href="#vision-mission" class="hover:text-purple-300 transition-colors py-1">Vision &amp; Mission</a>
+                    <a href="#erp-modules" class="text-amber-400 hover:text-amber-300 font-bold transition-colors py-1">⚡ ERP Architecture</a>
                     <a href="#academics" class="hover:text-purple-300 transition-colors py-1">Curriculum</a>
-                    <a href="#leadership" class="hover:text-purple-300 transition-colors py-1">Leadership Desk</a>
-                    <a href="#facilities" class="hover:text-purple-300 transition-colors py-1">Facilities &amp; Labs</a>
-                    <a href="#transport" class="hover:text-purple-300 transition-colors py-1">Transport Fleet</a>
+                    <button type="button" onclick="openErpDemoModal('student')" class="text-left text-purple-300 hover:text-white transition-colors py-1">🎓 Student Portal</button>
+                    <a href="#facilities" class="hover:text-purple-300 transition-colors py-1">Campus Facilities</a>
+                    <button type="button" onclick="openErpDemoModal('parent')" class="text-left text-purple-300 hover:text-white transition-colors py-1">👨‍👩‍👧 Parent Portal</button>
+                    <a href="#transport" class="hover:text-purple-300 transition-colors py-1">Live Bus Tracking</a>
+                    <button type="button" onclick="openErpDemoModal('teacher')" class="text-left text-purple-300 hover:text-white transition-colors py-1">👩‍🏫 Teacher Desk</button>
                     <a href="#gallery" class="hover:text-purple-300 transition-colors py-1">Campus Photos</a>
-                    <a href="#reviews" class="hover:text-purple-300 transition-colors py-1">Parent Reviews</a>
-                    <a href="#faqs" class="hover:text-purple-300 transition-colors py-1">FAQs</a>
-                    <a href="#admissions" class="hover:text-purple-300 transition-colors py-1">Admissions</a>
+                    <button type="button" onclick="openErpDemoModal('admin')" class="text-left text-amber-300 hover:text-amber-200 font-bold transition-colors py-1">🚀 Launch ERP Demo</button>
                 </div>
 
                 <div class="mt-8">
@@ -70,14 +70,13 @@
                     <p class="text-sm font-semibold text-white mt-1">{{ $school['office_timing'] ?? 'Monday to Saturday, 8:00 AM - 3:30 PM' }}</p>
                 </div>
 
-                <!-- Social-like badges -->
-                <div class="mt-6 flex items-center gap-2">
-                    <span class="inline-flex items-center gap-1 rounded-lg bg-purple-800/40 border border-purple-700/30 px-2.5 py-1 text-xs font-bold text-purple-300">
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
-                        Affiliated
+                <!-- ERP & Academic badges -->
+                <div class="mt-6 flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1 rounded-lg bg-amber-500/20 border border-amber-500/30 px-2.5 py-1 text-xs font-bold text-amber-300">
+                        ⚡ ERP Powered Campus
                     </span>
                     <span class="inline-flex items-center gap-1 rounded-lg bg-emerald-900/40 border border-emerald-700/30 px-2.5 py-1 text-xs font-bold text-emerald-400">
-                        ✓ Recognized
+                        ✓ 100% Cloud ERP
                     </span>
                 </div>
             </div>
@@ -108,14 +107,16 @@
         </div>
 
         <!-- Copyright & Admin Access Bar -->
-        <div class="mt-14 pt-8 border-t border-purple-800/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-purple-500">
+        <div class="mt-14 pt-8 border-t border-purple-800/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-purple-400">
             <p>
-                Copyright &copy; {{ now()->year }} <strong class="text-purple-300">{{ $school['name'] }}</strong>. All rights reserved.
+                Copyright &copy; {{ now()->year }} <strong class="text-purple-200">{{ $school['name'] }}</strong> • Powered by <span class="text-amber-400 font-bold">EPS School ERP Platform v3.4</span>
             </p>
             <div class="flex items-center gap-4">
+                <button type="button" onclick="openErpDemoModal('admin')" class="text-amber-400 hover:text-amber-300 font-bold underline transition-colors">🚀 Launch Live ERP Demo</button>
+                <span>•</span>
                 <a href="#home" class="hover:text-purple-300 transition-colors">Back to Top ↑</a>
                 <span>•</span>
-                <a href="{{ url('/schoolAdmin') }}" class="text-purple-400 hover:text-purple-200 font-bold underline transition-colors">Admin Portal Login</a>
+                <a href="{{ url('/schoolAdmin') }}" class="text-purple-300 hover:text-white font-bold underline transition-colors">SchoolAdmin Filament Panel</a>
             </div>
         </div>
     </div>
