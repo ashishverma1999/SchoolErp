@@ -28,7 +28,7 @@ class SchoolAdminPanelProvider extends PanelProvider
             ->id('schoolAdmin')
             ->path('schoolAdmin')
             ->login()
-            ->brandName('KSN Public School Admin')
+            ->brandName('Excel Public School Admin')
             ->colors([
                 'primary' => Color::Amber,
             ])

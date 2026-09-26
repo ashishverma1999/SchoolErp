@@ -12,7 +12,7 @@ use App\Models\SchoolSetting;
 use App\Models\Testimonial;
 use Illuminate\Database\Seeder;
 
-class KsnSchoolDataSeeder extends Seeder
+class SchoolDataSeeder extends Seeder
 {
     public function run(): void
     {
@@ -74,7 +74,7 @@ class KsnSchoolDataSeeder extends Seeder
                 'name' => 'Rajesh Sharma',
                 'role' => 'Parent of Class XII Student (Science)',
                 'rating' => 5,
-                'quote' => 'The senior secondary faculty for 11th and 12th science is outstanding at KSN Public School. The practical laboratories, regular test series, and personalized board mentorship helped my daughter score high percentiles.',
+                'quote' => 'The senior secondary faculty for 11th and 12th science is outstanding at Excel Public School. The practical laboratories, regular test series, and personalized board mentorship helped my daughter score high percentiles.',
                 'image' => '/images/school_building.jpeg',
                 'is_featured' => true,
                 'is_active' => true,
@@ -104,7 +104,7 @@ class KsnSchoolDataSeeder extends Seeder
                 'name' => 'Pooja Tiwari',
                 'role' => 'Parent of Class IV Student',
                 'rating' => 5,
-                'quote' => 'From cultural celebrations and annual sports meets to science exhibitions, KSN Public School nurtures every aspect of child development with great enthusiasm and disciplined care.',
+                'quote' => 'From cultural celebrations and annual sports meets to science exhibitions, Excel Public School nurtures every aspect of child development with great enthusiasm and disciplined care.',
                 'image' => '/images/classroom3.jpeg',
                 'is_featured' => true,
                 'is_active' => true,
@@ -291,17 +291,17 @@ class KsnSchoolDataSeeder extends Seeder
             [
                 'title' => "Chairman's Message",
                 'name' => 'Prof. Rajendra Prasad Singh',
-                'role' => 'Chairman, KSNPS',
+                'role' => 'Chairman, EPS',
                 'designation' => 'Ex. Dean - Social Science | Ex. HOD Psychology Department, MGKVP Varanasi',
                 'image' => '/images/chairman.jpeg',
-                'message' => 'Education is not merely about accumulating facts; it is the ignition of character, psychological strength, discipline, and noble aspirations. At KSN Public School, we strive to build a strong foundation of values, modern scientific knowledge, and self-confidence in every student from early childhood to Class XII.',
+                'message' => 'Education is not merely about accumulating facts; it is the ignition of character, psychological strength, discipline, and noble aspirations. At Excel Public School, we strive to build a strong foundation of values, modern scientific knowledge, and self-confidence in every student from early childhood to Class XII.',
                 'is_active' => true,
                 'sort_order' => 1,
             ],
             [
                 'title' => "Director's Message",
                 'name' => 'Dr. Anshuman Singh',
-                'role' => 'Director, KSNPS',
+                'role' => 'Director, EPS',
                 'designation' => 'Assistant Professor & HOD Hindi Department, BPGC | D.Phil from Allahabad University',
                 'image' => '/images/director.jpeg',
                 'message' => 'Our vision is to provide an inclusive and intellectually stimulating academic environment where every student discovers their unique strengths. From foundational play-way learning to senior secondary stream mastery, we combine rich linguistic proficiency and cultural values with progressive teaching methodologies.',
@@ -311,7 +311,7 @@ class KsnSchoolDataSeeder extends Seeder
             [
                 'title' => "Principal's Message",
                 'name' => 'Smt. Rajbala Singh',
-                'role' => 'Principal, KSNPS',
+                'role' => 'Principal, EPS',
                 'designation' => 'M.A., B.Ed. | Experienced Educator & Instructional Leader',
                 'image' => '/images/principal.jpeg',
                 'message' => 'Every child possesses immense potential waiting to be nurtured with care and discipline. Our dedicated team of educators is committed to providing personalized attention, encouraging active inquiry, hands-on lab experiments, and building strong study habits for lifelong success.',
@@ -321,7 +321,7 @@ class KsnSchoolDataSeeder extends Seeder
             [
                 'title' => "Vice Principal's Message",
                 'name' => 'Dr. Abhilaksha Singh',
-                'role' => 'Vice Principal, KSNPS',
+                'role' => 'Vice Principal, EPS',
                 'designation' => 'M.Sc Gold Medalist | D.Phil Botany | B.Ed | Academic Coordinator & Student Activities Head',
                 'image' => '/images/vice_principal.jpeg',
                 'message' => 'We believe in a harmonious blend of scholastic rigor and co-curricular vibrancy. By cultivating disciplined routines, creative expression, competitive exam foundation, and good habits, we prepare our learners to face future challenges with optimism.',
@@ -337,8 +337,8 @@ class KsnSchoolDataSeeder extends Seeder
         // 7. FAQs
         $faqs = [
             [
-                'question' => 'What classes and academic streams are offered at KSN Public School?',
-                'answer' => 'KSN Public School provides comprehensive K-12 education from Pre-Nursery to Class XII. For Senior Secondary (Classes XI & XII), we offer Science (PCM & PCB), Commerce, and Humanities/Arts streams with specialized laboratory and faculty support.',
+                'question' => 'What classes and academic streams are offered at Excel Public School?',
+                'answer' => 'Excel Public School provides comprehensive K-12 education from Pre-Nursery to Class XII. For Senior Secondary (Classes XI & XII), we offer Science (PCM & PCB), Commerce, and Humanities/Arts streams with specialized laboratory and faculty support.',
                 'category' => 'Academics',
                 'is_active' => true,
                 'sort_order' => 1,
@@ -352,7 +352,7 @@ class KsnSchoolDataSeeder extends Seeder
             ],
             [
                 'question' => 'What laboratory facilities are available for Secondary & Senior Secondary students?',
-                'answer' => 'KSNPS features fully equipped modern Physics, Chemistry, Biology, and Computer Science laboratories with all required apparatus, specimens, and digital equipment for board curriculum experiments and practical assessments.',
+                'answer' => 'EPS features fully equipped modern Physics, Chemistry, Biology, and Computer Science laboratories with all required apparatus, specimens, and digital equipment for board curriculum experiments and practical assessments.',
                 'category' => 'Facilities',
                 'is_active' => true,
                 'sort_order' => 3,
@@ -366,7 +366,7 @@ class KsnSchoolDataSeeder extends Seeder
             ],
             [
                 'question' => 'Is transport (school van) available for all classes?',
-                'answer' => 'Yes, KSN Public School provides supervised school van services covering multiple designated routes in Khalilabad and neighboring areas. Please consult the school office for specific route stops.',
+                'answer' => 'Yes, Excel Public School provides supervised school van services covering multiple designated routes in Khalilabad and neighboring areas. Please consult the school office for specific route stops.',
                 'category' => 'Transport',
                 'is_active' => true,
                 'sort_order' => 5,
@@ -379,7 +379,7 @@ class KsnSchoolDataSeeder extends Seeder
                 'sort_order' => 6,
             ],
             [
-                'question' => 'What is the medium of instruction at KSN Public School?',
+                'question' => 'What is the medium of instruction at Excel Public School?',
                 'answer' => 'The medium of instruction is English, with equal emphasis on strong proficiency in Hindi, Sanskrit, and foundational communication skills.',
                 'category' => 'Academics',
                 'is_active' => true,
@@ -393,15 +393,15 @@ class KsnSchoolDataSeeder extends Seeder
 
         // 8. School Settings
         $settings = [
-            'school_name' => 'KSN Public School',
-            'school_short' => 'KSNPS',
+            'school_name' => 'Excel Public School',
+            'school_short' => 'EPS',
             'tagline' => 'Nurturing confident, creative, and ethical learners from Pre-Nursery to Class XII with modern education, discipline, and core values.',
             'subheading' => 'Premier English Medium Co-Educational K-12 Institution (Pre to 12th) | Khalilabad, Sant Kabir Nagar',
             'affiliation' => 'Recognized & Following Modern Progressive Curriculum (Pre-Nursery to Class XII)',
             'email' => 'snpublicschool1963@gmail.com',
             'phone' => '+91 95544 96299',
             'whatsapp' => '+91 95544 96299',
-            'address' => 'KSN Public School, Khalilabad, Sant Kabir Nagar, Uttar Pradesh 272175',
+            'address' => 'Excel Public School, Khalilabad, Sant Kabir Nagar, Uttar Pradesh 272175',
             'timings' => 'Monday to Saturday: 8:00 AM – 2:00 PM',
             'stat_years' => '25+',
             'stat_students' => '2000+',

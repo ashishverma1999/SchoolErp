@@ -55,12 +55,12 @@ class SchoolErpSeeder extends Seeder
 
         // 3. Teachers
         $teachersData = [
-            ['employee_id' => 'EMP-2024-001', 'first_name' => 'Rajesh', 'last_name' => 'Sharma', 'email' => 'rajesh.sharma@ksnschool.edu.in', 'phone' => '+91 98765 43210', 'qualification' => 'M.Sc. Mathematics, B.Ed', 'joining_date' => '2021-06-15', 'status' => 'active'],
-            ['employee_id' => 'EMP-2024-002', 'first_name' => 'Sunita', 'last_name' => 'Verma', 'email' => 'sunita.verma@ksnschool.edu.in', 'phone' => '+91 98765 43211', 'qualification' => 'M.Sc. Physics, M.Ed', 'joining_date' => '2020-04-10', 'status' => 'active'],
-            ['employee_id' => 'EMP-2024-003', 'first_name' => 'Amit', 'last_name' => 'Kumar', 'email' => 'amit.kumar@ksnschool.edu.in', 'phone' => '+91 98765 43212', 'qualification' => 'M.A. English Literature, B.Ed', 'joining_date' => '2022-07-01', 'status' => 'active'],
-            ['employee_id' => 'EMP-2024-004', 'first_name' => 'Priya', 'last_name' => 'Singh', 'email' => 'priya.singh@ksnschool.edu.in', 'phone' => '+91 98765 43213', 'qualification' => 'M.Sc. Chemistry, NET', 'joining_date' => '2023-01-16', 'status' => 'active'],
-            ['employee_id' => 'EMP-2024-005', 'first_name' => 'Vikash', 'last_name' => 'Patel', 'email' => 'vikash.patel@ksnschool.edu.in', 'phone' => '+91 98765 43214', 'qualification' => 'MCA, B.Tech CS', 'joining_date' => '2022-03-20', 'status' => 'active'],
-            ['employee_id' => 'EMP-2024-006', 'first_name' => 'Neha', 'last_name' => 'Gupta', 'email' => 'neha.gupta@ksnschool.edu.in', 'phone' => '+91 98765 43215', 'qualification' => 'M.Sc. Zoology, B.Ed', 'joining_date' => '2023-08-10', 'status' => 'active'],
+            ['employee_id' => 'EMP-2024-001', 'first_name' => 'Rajesh', 'last_name' => 'Sharma', 'email' => 'rajesh.sharma@excelpublicschool.edu.in', 'phone' => '+91 98765 43210', 'qualification' => 'M.Sc. Mathematics, B.Ed', 'joining_date' => '2021-06-15', 'status' => 'active'],
+            ['employee_id' => 'EMP-2024-002', 'first_name' => 'Sunita', 'last_name' => 'Verma', 'email' => 'sunita.verma@excelpublicschool.edu.in', 'phone' => '+91 98765 43211', 'qualification' => 'M.Sc. Physics, M.Ed', 'joining_date' => '2020-04-10', 'status' => 'active'],
+            ['employee_id' => 'EMP-2024-003', 'first_name' => 'Amit', 'last_name' => 'Kumar', 'email' => 'amit.kumar@excelpublicschool.edu.in', 'phone' => '+91 98765 43212', 'qualification' => 'M.A. English Literature, B.Ed', 'joining_date' => '2022-07-01', 'status' => 'active'],
+            ['employee_id' => 'EMP-2024-004', 'first_name' => 'Priya', 'last_name' => 'Singh', 'email' => 'priya.singh@excelpublicschool.edu.in', 'phone' => '+91 98765 43213', 'qualification' => 'M.Sc. Chemistry, NET', 'joining_date' => '2023-01-16', 'status' => 'active'],
+            ['employee_id' => 'EMP-2024-005', 'first_name' => 'Vikash', 'last_name' => 'Patel', 'email' => 'vikash.patel@excelpublicschool.edu.in', 'phone' => '+91 98765 43214', 'qualification' => 'MCA, B.Tech CS', 'joining_date' => '2022-03-20', 'status' => 'active'],
+            ['employee_id' => 'EMP-2024-006', 'first_name' => 'Neha', 'last_name' => 'Gupta', 'email' => 'neha.gupta@excelpublicschool.edu.in', 'phone' => '+91 98765 43215', 'qualification' => 'M.Sc. Zoology, B.Ed', 'joining_date' => '2023-08-10', 'status' => 'active'],
         ];
 
         $teachers = [];

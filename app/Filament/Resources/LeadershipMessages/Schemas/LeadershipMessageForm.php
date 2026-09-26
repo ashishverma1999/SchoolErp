@@ -27,7 +27,7 @@ class LeadershipMessageForm
                             ->required()
                             ->maxLength(255),
                         TextInput::make('role')
-                            ->label('School Role (e.g. Chairman, KSNPS)')
+                            ->label('School Role (e.g. Chairman, EPS)')
                             ->required()
                             ->maxLength(255),
                         TextInput::make('sort_order')

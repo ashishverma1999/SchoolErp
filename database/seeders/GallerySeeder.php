@@ -24,7 +24,7 @@ class GallerySeeder extends Seeder
             'school_building.jpeg' => [
                 'title' => 'Main Academic Campus & Building',
                 'category' => 'Campus',
-                'description' => 'Exterior view of the KSN Public School campus located at Khalilabad, Sant Kabir Nagar.',
+                'description' => 'Exterior view of the Excel Public School campus located at Knowledge City Campus.',
                 'is_featured' => true,
             ],
             'school_gallery.jpeg' => [
@@ -60,25 +60,25 @@ class GallerySeeder extends Seeder
             'chairman.jpeg' => [
                 'title' => 'Prof. Rajendra Prasad Singh (Chairman)',
                 'category' => 'Leadership',
-                'description' => 'Ex. Dean - Social Science & Ex. HOD Psychology Department, MGKVP Varanasi. Chairman, KSNPS.',
+                'description' => 'Ex. Dean - Social Science & Ex. HOD Psychology Department, MGKVP Varanasi. Chairman, EPS.',
                 'is_featured' => true,
             ],
             'director.jpeg' => [
                 'title' => 'Dr. Anshuman Singh (Director)',
                 'category' => 'Leadership',
-                'description' => 'Assistant Professor & HOD Hindi Department, BPGC. D.Phil from Allahabad University. Director, KSNPS.',
+                'description' => 'Assistant Professor & HOD Hindi Department, BPGC. D.Phil from Allahabad University. Director, EPS.',
                 'is_featured' => true,
             ],
             'principal.jpeg' => [
                 'title' => 'Smt. Rajbala Singh (Principal)',
                 'category' => 'Leadership',
-                'description' => 'M.A., B.Ed. Experienced Educator & Instructional Leader. Principal, KSNPS.',
+                'description' => 'M.A., B.Ed. Experienced Educator & Instructional Leader. Principal, EPS.',
                 'is_featured' => true,
             ],
             'vice_principal.jpeg' => [
                 'title' => 'Vice Principal (Academic Coordinator)',
                 'category' => 'Leadership',
-                'description' => 'Academic coordination, discipline, and student activities management. Vice Principal, KSNPS.',
+                'description' => 'Academic coordination, discipline, and student activities management. Vice Principal, EPS.',
                 'is_featured' => true,
             ],
             'brochure.png' => [
@@ -135,7 +135,7 @@ class GallerySeeder extends Seeder
             } else {
                 $title = Str::headline(pathinfo($filename, PATHINFO_FILENAME));
                 $category = 'Activities';
-                $desc = 'Glimpse of vibrant student life and campus activities at KSN Public School.';
+                $desc = 'Glimpse of vibrant student life and campus activities at Excel Public School.';
                 $featured = false;
             }
 
