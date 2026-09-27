@@ -57,4 +57,4 @@ EXPOSE 10000
 
 ENTRYPOINT ["entrypoint"]
 
-CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-10000}"]
+CMD ["sh", "-c", "php artisan serve --no-reload --host=0.0.0.0 --port=${PORT:-10000}"]
